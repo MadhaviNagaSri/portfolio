@@ -1,0 +1,213 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html>
+
+<header>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	
+	<title>FCC:PortfolioPageExercise</title>
+</header>
+
+<body>
+	<nav id="navbar">
+    <div>
+      <a href="#welcome-section">Home</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <a id="profile-link" href="https://github.com/MadhaviNagaSri" target="_blank">GitHub</a>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+    <h1>Hello, I'm Madhavi</h1>
+    <p>Aspiring Full Stack Java Developer | Final Year CSE Student</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-tile">
+        <img src="https://source.unsplash.com/featured/?code" alt="Project 1">
+        <h3>Login Authentication System</h3>
+        <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-tile">
+        <img src="https://source.unsplash.com/featured/?website" alt="Project 2">
+        <h3>Responsive Landing Page</h3>
+        <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-tile">
+        <img src="https://source.unsplash.com/featured/?app" alt="Project 3">
+        <h3>Java Todo List App</h3>
+        <a href="https://github.com/yourusername/project3" target="_blank">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Madhavi | Designed with ❤️ by Me
+  </footer>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f8f8;
+    }
+
+    /* Navbar */
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+    }
+
+    #navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    #navbar a:hover {
+      color: #f39c12;
+    }
+
+    /* Welcome Section */
+    #welcome-section {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1470&q=80') center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 70px 20px 20px;
+    }
+
+    #welcome-section h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    #welcome-section p {
+      font-size: 1.3em;
+    }
+
+    /* Projects Section */
+    #projects {
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    #projects h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-tile {
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .project-tile:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-tile img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-tile h3 {
+      padding: 15px;
+    }
+
+    .project-tile a {
+      display: block;
+      text-align: center;
+      background: #111;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .project-tile a:hover {
+      background: #f39c12;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111;
+      color: #eee;
+      font-size: 14px;
+    }
+
+    /* Responsive Menu */
+    @media (max-width: 600px) {
+      #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #navbar a {
+        margin: 10px 0;
+      }
+
+      #welcome-section h1 {
+        font-size: 2em;
+      }
+
+      .project-tile img {
+        height: 180px;
+      }
+    }
+
+** end of styles.css **
+
